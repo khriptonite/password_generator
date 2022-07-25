@@ -1,0 +1,50 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="hero">
+                <div class="top">
+                    <h1 id="heading">Generate a <br><span class="heading-green">random password</span></h1>
+                    <p id="support-txt">Never use an insecure password again.</p>
+                    <div class="btn-pass-length">
+                        <button id="generate-pass-btn">Generate passwords</button>
+                        <div class="pass-length-box">
+                            <label for="pass-length">Password length:</label><br>
+                            <input id="pass-length" type="number" placeholder="15 max.">
+                        </div>
+                    </div>
+                    <div class="checkboxes">
+                        <div class="nums boxes">
+                            <label for="add-nums">Add numbers:</label><br>
+                            <input type="checkbox" class="check" id="add-nums" name="add-nums" value="numbers">
+                        </div>
+                        <div class="sym boxes">
+                            <label for="add-sym">Add symbols:</label><br>
+                            <input type="checkbox" class="check" id="add-sym" name="add-sym" value="symbols">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="password one">
+                        <p id="first-pass"></p>
+                    </div>
+                    <div class="password two">
+                        <p id="second-pass"></p>
+                    </div>
+                </div>
+                <div class="copied">
+                    <p>Password copied!</p>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
